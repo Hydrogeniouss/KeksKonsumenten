@@ -1,4 +1,4 @@
-body{	
+/* body{
     background-color: gray;
     margin: 0;
     font-family: "Comic Sans MS";
@@ -36,4 +36,83 @@ h1{
     .headchildren{
         width: 300px;
     }
+} */
+
+/* ----------------------------------------- */
+:root {
+    --c-maincolor: aquamarine;
+    --c-secondcolor: #f32fa3;
+    --c-thirdcolor: rgb(92, 96, 222);
+    --c-accent: yellow;
+    --c-bg: #ffffff
+}
+
+
+:root {
+    
+    --f-mainfont: 'Courier New', Courier, monospace;
+    --f-secondfont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+*{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: var(--c-secondcolor);
+    height: 80px;
+}
+nav button {
+    height: 50px;
+    width: 24%;
+    margin: 20px;
+
+    font-size: 20px;
+    font-family: var(--f-secondfont);
+
+    background-color: var(--c-maincolor);
+    border-color: var(--c-maincolor);
+    border-radius: 8px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+
+    margin: 50px;
+    background-color: var(--c-maincolor);
+}
+
+.item{
+    margin: 10px;
+    background-color: var(--c-bg);
+}
+
+.item h1 {
+    font-size: 90px;
+    font-family: var(--f-mainfont);
+}
+
+.item p {
+    font-size: 30px;
+    font-family: var(--f-secondfont);
+}
+
+#heading {
+    padding-top: 130px;
+    padding-left: 4%;
 }
