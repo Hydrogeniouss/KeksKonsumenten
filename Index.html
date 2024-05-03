@@ -7,7 +7,6 @@
 
     </head>
     <body>
-
         <nav>
             <Button id="btn1">
                 Game1
@@ -27,45 +26,14 @@
             <div class="item" id="heading">
                 <h1>We create Games</h1>
                 <p>heyyy, we are Fermenhydrofish</p>
-            </div>
-            <div class="item"> 
-                <h1>aa</h1>
-            </div>
+            </div> 
+            
+            <div class="spaceBetweenItems"></div>
 
-
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos ipsum nihil doloribus unde, asperiores aut harum pariatur, libero eius quo quaerat saepe dolorem laborum culpa nostrum doloremque? Dolorem, ipsam.</p>
+            </div>
         </div>
 
-
-
     </body>
-    <script>
-        //Copypasta, mit einer Priese Eigenarbeit.
-        //seeehr inperformant
-    setInterval(updateRainbowTxt,200)
-    function updateRainbowTxt() {
-        var elements = document.getElementsByClassName("fun");
-        for (let i = 0; i < elements.length; i++) {
-            generateRainbowText(elements[i]);
-        }
-    }
-    function generateRainbowText(element) {
-        var text = element.innerText;
-        element.innerHTML = "";
-        for (let i = 0; i < text.length; i++) {
-            let charElem = document.createElement("span");
-            charElem.style.color = getRandomColor();
-            charElem.innerHTML = text[i];
-            element.appendChild(charElem);
-        }
-    }
-    function getRandomColor() {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-    </script>
 </html>

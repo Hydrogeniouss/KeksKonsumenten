@@ -1,5 +1,8 @@
 //Copypasta, mit einer Priese Eigenarbeit.
 //seeehr inperformant
+// gets probably renewed or deleted
+
+
 setInterval(updateRainbowTxt, 200);
 function updateRainbowTxt() {
   var elements = document.getElementsByClassName("fun");
@@ -25,3 +28,4 @@ function getRandomColor() {
   }
   return color;
 }
+
