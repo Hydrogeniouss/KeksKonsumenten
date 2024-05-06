@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 20px;
+    background-color: lightgreen;
+    color: aliceblue;
+
+}
+
+#Cookie {
+    background-image: url(../Assets/Cookie.png);
+    background-size: 100%;
+    height: 500px;
+    width: 500px;
+    border: 0cap;
+
+}
