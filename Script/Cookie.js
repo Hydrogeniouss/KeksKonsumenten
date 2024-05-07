@@ -15,7 +15,7 @@ const upgrades = {
   grandma: new Item("Grandma", 10, 1),
   mine: new Item("Mine", 100, 10),
 };
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
   //elements
   const cookie = document.getElementById("Cookie");
   const text = document.getElementById("Amount");
