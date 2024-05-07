@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
       player.cookies +=
         (upgrades[element].amount * upgrades[element].effect) / 20;
     }
-    text.innerHTML = `You currently have ${Math.floor(player.cookies)} Cookies`;
+    text.innerHTML = `${Math.floor(player.cookies)} Cookies`;
   };
   const buy = (item) => {
     if (player.cookies > upgrades[item].cost) {

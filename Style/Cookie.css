@@ -12,5 +12,11 @@
     height: 500px;
     width: 500px;
     border: 0cap;
+}
+#Amount {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+
 
 }
