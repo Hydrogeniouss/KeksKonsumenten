@@ -19,28 +19,33 @@ const upgrades = {
 // Button Animation
 const buttonClick = (event) => {
   const button = event.target;
-  console.log(event)
-  button.classList.add('enlarged');
+  console.log(event);
+  button.classList.add("enlarged");
   setTimeout(() => {
-    button.classList.remove('enlarged');
+    button.classList.remove("enlarged");
   }, 3000); // Adjust the time (in milliseconds) as needed
-}
-
+};
 
 window.addEventListener("DOMContentLoaded", () => {
   // Button Animation
-  Array.from(document.getElementsByClassName("buttonsUpgrade")).forEach(x => {
-  x.addEventListener("click", buttonClick);
-})
+  Array.from(document.getElementsByClassName("buttonsUpgrade")).forEach((x) => {
+    x.addEventListener("click", buttonClick);
+  });
   //elements
   const cookie = document.getElementById("Cookie");
   const text = document.getElementById("Amount");
+  const cps = document.getElementById("CPS");
   //functions
+
   const update = () => {
     for (const element of Object.keys(upgrades)) {
       player.cookies +=
         (upgrades[element].amount * upgrades[element].effect) / 20;
     }
+
+    cps.innerHTML = `Cps ${Object.values(upgrades)
+      .map((x) => x.amount * x.effect)
+      .reduce((a, b) => a + b)}`;
     text.innerHTML = `${Math.floor(player.cookies)} Cookies`;
   };
   const buy = (item) => {
@@ -55,8 +60,9 @@ window.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("Grandma")
     .addEventListener("click", () => buy("grandma"));
-  document.getElementById("Mine").addEventListener("click", () => buy("mine"));-
-  //loops
-  window.setInterval(update, 50);
+  document.getElementById("Mine").addEventListener("click", () => buy("mine"));
+  -(
+    //loops
+    window.setInterval(update, 50)
+  );
 });
-
