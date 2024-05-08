@@ -78,6 +78,7 @@
   border: 0px;
   margin: 5px;
   padding: 0px;
+  border-radius: 100%;
 }
 #Amount {
   font-family: "Josefin Sans", sans-serif;
