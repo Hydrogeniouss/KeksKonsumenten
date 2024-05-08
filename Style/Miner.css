@@ -1,0 +1,15 @@
+.rollingBack{
+height: 80px;
+}
+.rollingStartBack{
+    background-image: url(../../../../Downloads/FireflyGrassfield.jpg);
+    background-size: 100vw 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
