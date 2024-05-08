@@ -1,97 +1,100 @@
 * {
-    margin: 0px;
-    padding: 20px;
-    background-color: var(--c-bg);
-    color: var(--c-font);
+  margin: 0px;
+  padding: 20px;
+  background-color: var(--c-bg);
+  color: var(--c-font);
 }
 
 :root {
-    --c-maincolor: aquamarine;
-    --c-secondcolor: #050b5a;
-    --c-thirdcolor: #ffa5a5;
-    --c-accent: yellow;
-    --c-bg: #420000;
-    --c-font: #ffffff;
+  --c-maincolor: aquamarine;
+  --c-secondcolor: #050b5a;
+  --c-thirdcolor: #ffa5a5;
+  --c-accent: yellow;
+  --c-bg: #420000;
+  --c-font: #ffffff;
 
-    --f-heading: "Josefin Sans", sans-serif
+  --f-heading: "Josefin Sans", sans-serif;
 }
-
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .innerContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    height: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  height: 600px;
 }
 
 #upgradeContainer {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 
-    width: max(50%, 290px);
-    background-color: var(--c-secondcolor);
-    border-radius: 15px;
+  width: max(50%, 290px);
+  background-color: var(--c-secondcolor);
+  border-radius: 15px;
 }
 
 #upgradeContainer button {
-    margin: 10px;
-    background-color: var(--c-thirdcolor);
-    color: var(--c-secondcolor);
-    border-style: none;
-    transition: 0.2s;
-    font-family: var(--f-heading);
-    font-size: 2em;
-    font-weight: 500;
+  margin: 10px;
+  background-color: var(--c-thirdcolor);
+  color: var(--c-secondcolor);
+  border-style: none;
+  transition: 0.2s;
+  font-family: var(--f-heading);
+  font-size: 2em;
+  font-weight: 500;
 }
 #upgradeContainer button:hover {
-    transition: 0.2s;
-    transform: scale(1.05);
+  transition: 0.2s;
+  transform: scale(1.05);
 }
 .buttonsUpgrade {
-    transition: transform 0.3s ease;
-    background-color: var(--c-font);
-}  
+  transition: transform 0.3s ease;
+  background-color: var(--c-font);
+}
 .enlarged {
-    background-color: wheat;
-
+  background-color: wheat;
 }
 
 #Cookie {
-    --d: min(100%, 500px);
-    background-image: url(../Assets/Cookie.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: var(--d);    
-    height: var(--d);
-    border: 0px ;
-    margin: 5px;
-    padding: 0px;
-
+  --d: min(100%, 500px);
+  background-image: url(../Assets/Cookie.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: var(--d);
+  height: var(--d);
+  border: 0px;
+  margin: 5px;
+  padding: 0px;
 }
 #Amount {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-    margin: 5px;
-    padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+  margin: 5px;
+  padding: 0px;
 }
 
 #CPS {
-    font-family: var(--f-heading);
-    font-size: 40px;
-    margin: 0px;
-    padding: 0px;
+  font-family: var(--f-heading);
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
 }
 
 @keyframes klickevent {
-    0% {    transform: scale(1.05);}
-    50% {   transform: scale(1);   }
-    100% {  transform: scale(1.05);}
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
