@@ -15,7 +15,23 @@ const upgrades = {
   grandma: new Item("Grandma", 10, 1),
   mine: new Item("Mine", 100, 10),
 };
+
+// Button Animation
+const buttonClick = (event) => {
+  const button = event.target;
+  console.log(event)
+  button.classList.add('enlarged');
+  setTimeout(() => {
+    button.classList.remove('enlarged');
+  }, 3000); // Adjust the time (in milliseconds) as needed
+}
+
+
 window.addEventListener("DOMContentLoaded", () => {
+  // Button Animation
+  Array.from(document.getElementsByClassName("buttonsUpgrade")).forEach(x => {
+  x.addEventListener("click", buttonClick);
+})
   //elements
   const cookie = document.getElementById("Cookie");
   const text = document.getElementById("Amount");
@@ -39,8 +55,8 @@ window.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("Grandma")
     .addEventListener("click", () => buy("grandma"));
-  document.getElementById("Mine").addEventListener("click", () => buy("mine"));
-
+  document.getElementById("Mine").addEventListener("click", () => buy("mine"));-
   //loops
   window.setInterval(update, 50);
 });
+
