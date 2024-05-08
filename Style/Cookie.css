@@ -53,12 +53,19 @@
   transition: 0.2s;
   transform: scale(1.05);
 }
+#upgradeContainer button:active {
+  transform: scale(0.95);
+  color: wheat;
+}
+
+#Cookie:active {
+  transform: scale(1.005);
+}
+
+
 .buttonsUpgrade {
   transition: transform 0.3s ease;
   background-color: var(--c-font);
-}
-.enlarged {
-  background-color: wheat;
 }
 
 #Cookie {

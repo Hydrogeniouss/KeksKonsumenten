@@ -16,21 +16,8 @@ const upgrades = {
   mine: new Item("mine", 100, 10),
 };
 
-// Button Animation
-const buttonClick = (event) => {
-  const button = event.target;
-  console.log(event);
-  button.classList.add("enlarged");
-  setTimeout(() => {
-    button.classList.remove("enlarged");
-  }, 3000); // Adjust the time (in milliseconds) as needed
-};
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Button Animation
-  Array.from(document.getElementsByClassName("buttonsUpgrade")).forEach((x) => {
-    x.addEventListener("click", buttonClick);
-  });
   //elements
   const cookie = document.getElementById("Cookie");
   const text = document.getElementById("Amount");
