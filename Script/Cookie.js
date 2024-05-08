@@ -12,8 +12,8 @@ class Item {
 
 const player = new Player();
 const upgrades = {
-  grandma: new Item("Grandma", 10, 1),
-  mine: new Item("Mine", 100, 10),
+  grandma: new Item("grandma", 10, 1),
+  mine: new Item("mine", 100, 10),
 };
 
 // Button Animation
@@ -57,12 +57,9 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   //events
   cookie.addEventListener("click", () => player.cookies++);
-  document
-    .getElementById("Grandma")
-    .addEventListener("click", () => buy("grandma"));
-  document.getElementById("Mine").addEventListener("click", () => buy("mine"));
-  -(
-    //loops
-    window.setInterval(update, 50)
+  console.log(Object.values(upgrades));
+  Object.values(upgrades).map((x) =>
+    document.getElementById(x.name).addEventListener("click", () => buy(x.name))
   );
+  window.setInterval(update, 50);
 });
