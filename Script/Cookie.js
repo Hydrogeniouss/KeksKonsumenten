@@ -34,9 +34,18 @@ const player = new Player();
 const upgrades = {
   grandma: new Item("grandma", 10, 1),
   mine: new Item("mine", 100, 10),
-  school: new Item("school", 1000, 10),
+  school: new Item("school", 200, 25),
+  flowergarden: new Item("flowergarden", 500, 30),
+  solarpanels: new Item("solarpanels", 1000, 75),
+  artgallery: new Item("artgallery", 5000, 125),
 };
-const improvements = [new Improvement("We win", 1000, player, "totalmult", 2)];
+const improvements = [
+  new Improvement("Better Tools", 500, player, "clickmult", 2),
+  new Improvement("Efficient Production", 1000, player, "totalmult", 1.5),
+  new Improvement("Advanced Machinery", 1500, player, "totalmult", 3),
+  new Improvement("Automation Upgrade", 2000, player, "totalmult", 2.5),
+  new Improvement("Research Breakthrough", 750, player, "clickmult", 3),
+];
 
 window.addEventListener("DOMContentLoaded", () => {
   //elements
@@ -90,7 +99,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   };
   //events
-  cookie.addEventListener("click", () => player.cookies++);
+  cookie.addEventListener("click", () => (player.cookies += player.clickmult));
   Object.values(upgrades).map((x) =>
     document.getElementById(x.name).addEventListener("click", () => buy(x.name))
   );
