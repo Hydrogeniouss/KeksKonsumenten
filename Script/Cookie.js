@@ -86,7 +86,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const createImpButton = (improvement) => {
     const button = document.createElement("button");
     button.textContent = `${improvement.name} (${improvement.cost})`;
-    button.addEventListener("click", () => improvement.buy());
+    button.addEventListener("click", () => {
+      improvement.buy();
+      improvementContainer.removeChild(button);
+    });
     return button;
   };
   const appendImp = () => {
@@ -104,5 +107,5 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById(x.name).addEventListener("click", () => buy(x.name))
   );
   window.setInterval(update, 50);
-  window.setInterval(appendImp, 1000);
+  appendImp();
 });
