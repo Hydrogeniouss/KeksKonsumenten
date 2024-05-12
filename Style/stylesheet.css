@@ -26,6 +26,8 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -38,7 +40,7 @@ nav {
 
 nav a {
   height: 50px;
-  width: 24%;
+  width: 30%;
   margin: 20px
 
 }
@@ -62,6 +64,8 @@ nav a button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
 .container {
   display: flex;
   flex-direction: column;
