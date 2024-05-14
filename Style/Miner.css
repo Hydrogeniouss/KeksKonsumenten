@@ -2,14 +2,26 @@
 height: 80px;
 }
 .rollingStartBack{
-    background-image: url(../../../../Downloads/FireflyGrassfield.jpg);
+    background-image: url(../Assets/FireflyGrassfield.jpg);
     background-size: 100vw 100vh;
     height: 100vh;
     background-repeat: no-repeat;
 }
+/* .debugElem:nth-child(odd)??? */
+.debugElem{
+    width: 100vw;
+}
+
 body{
     margin: 0px;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
+    /*Hide scrollbar*/
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
