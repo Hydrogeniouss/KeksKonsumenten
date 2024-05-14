@@ -41,14 +41,15 @@
   flex-direction: column;
   align-self: flex-start;
 
-  width: max(50%, 290px);
+  width: max(50%, 270px);
   background-color: var(--c-secondcolor);
   border-radius: 15px;
+
   margin: 20px;
+  padding: 7px;
 }
 
 #upgradeContainer button {
-  margin: 10px;
   background-color: var(--c-thirdcolor);
   color: var(--c-font);
   border-style: none;
@@ -56,6 +57,10 @@
   font-family: var(--f-heading);
   font-size: 1.3em;
   font-weight: 500;
+
+  padding: 15px 0px;
+  margin: 10px;
+  border-radius: 2px;
 }
 #upgradeContainer button:hover {
   transition: 0.2s;
@@ -71,13 +76,14 @@
   flex-direction: column;
   align-self: flex-start;
 
-  width: max(50%, 290px);
+  width: max(50%, 270px);
   background-color: var(--c-secondcolor);
   border-radius: 15px;
+
   margin: 20px;
+  padding: 7px;
 }
 #improvementContainer button {
-  margin: 10px;
   background-color: var(--c-thirdcolor);
   color: var(--c-font);
   border-style: none;
@@ -85,6 +91,10 @@
   font-family: var(--f-heading);
   font-size: 1.3em;
   font-weight: 500;
+
+  padding: 15px 0px;
+  margin: 10px;
+  border-radius: 2px;
 }
 #improvementContainer button:hover {
   transition: 0.2s;
@@ -98,13 +108,19 @@
   background-color: var(--c-thirdcolor);
   font-family: var(--f-heading);
   font-size: 1.8em;
-  font-weight: 900;
+  font-weight: 900; 
+
+  margin: 3px;
+  border-radius: 5px;
 }
 #upgrades {
   background-color: var(--c-thirdcolor);
   font-family: var(--f-heading);
   font-size: 1.8em;
   font-weight: 900; 
+
+  margin: 3px;
+  border-radius: 5px;
 }
 
 
