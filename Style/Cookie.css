@@ -8,7 +8,7 @@
 :root {
   --c-maincolor: aquamarine;
   --c-secondcolor: #050b5a;
-  --c-thirdcolor: #ffa5a5;
+  --c-thirdcolor: #9dbcff;
   --c-accent: yellow;
   --c-bg: #420000;
   --c-font: #ffffff;
@@ -21,10 +21,17 @@
   flex-direction: row;
   justify-content: space-around;
 }
-.innerContainer {
+.innerContainerColumn {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  align-items: center;
+  height: 600px;
+}
+.innerContainerRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
   height: 600px;
 }
@@ -37,16 +44,17 @@
   width: max(50%, 290px);
   background-color: var(--c-secondcolor);
   border-radius: 15px;
+  margin: 20px;
 }
 
 #upgradeContainer button {
   margin: 10px;
   background-color: var(--c-thirdcolor);
-  color: var(--c-secondcolor);
+  color: var(--c-font);
   border-style: none;
   transition: 0.2s;
   font-family: var(--f-heading);
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 500;
 }
 #upgradeContainer button:hover {
@@ -58,8 +66,50 @@
   color: wheat;
 }
 
+#improvementContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  width: max(50%, 290px);
+  background-color: var(--c-secondcolor);
+  border-radius: 15px;
+  margin: 20px;
+}
+#improvementContainer button {
+  margin: 10px;
+  background-color: var(--c-thirdcolor);
+  color: var(--c-font);
+  border-style: none;
+  transition: 0.2s;
+  font-family: var(--f-heading);
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#improvementContainer button:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+#improvementContainer button:active {
+  transform: scale(0.95);
+  color: wheat;
+}
+#improvements {
+  background-color: var(--c-thirdcolor);
+  font-family: var(--f-heading);
+  font-size: 1.8em;
+  font-weight: 900;
+}
+#upgrades {
+  background-color: var(--c-thirdcolor);
+  font-family: var(--f-heading);
+  font-size: 1.8em;
+  font-weight: 900; 
+}
+
+
 #Cookie:active {
-  transform: scale(1.05) rotate(-10deg);
+  transform: scale(1.1);
 }
 
 
@@ -97,12 +147,15 @@
 
 @keyframes klickevent {
   0% {
-    transform: scale(1.05);
+    transform: scale(1);
+
   }
   50% {
-    transform: scale(1);
+    transform: scale(1.5);
+   
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1);
+    
   }
 }

@@ -93,7 +93,6 @@ window.addEventListener("DOMContentLoaded", () => {
     return button;
   };
   const appendImp = () => {
-    improvementContainer.innerHTML = "";
     improvements.forEach((improvement) => {
       if (!improvement.bought) {
         const button = createImpButton(improvement);
