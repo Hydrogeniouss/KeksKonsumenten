@@ -87,8 +87,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const button = document.createElement("button");
     button.textContent = `${improvement.name} (${improvement.cost})`;
     button.addEventListener("click", () => {
-      improvement.buy();
-      improvementContainer.removeChild(button);
+      if (player.cookies > improvement.cost) {
+        improvement.buy();
+        improvementContainer.removeChild(button);
+      }
     });
     return button;
   };
