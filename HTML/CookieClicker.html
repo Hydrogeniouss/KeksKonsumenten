@@ -1,17 +1,41 @@
-<script> cookies = 0;
-let grandma = 0;
-function CookieClicker(){
-    document.getElementbyClassName() = cookies;
-    if (cookies>10){
-        document.getElementsByClassName()
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../Script/Cookie.js"></script>
+    <link rel="stylesheet" href="../Style/Cookie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="innerContainerColumn">
+        <div id="Amount"></div>
+        <p id="CPS"></p>
+        <button id="Cookie"></button>
+      </div>
 
-}
-function handClick(){
-    cookies++;
-}
-function autoClick(){
+      <div class="innerContainerRow">
+        <div id="upgradeContainer">
+          <div id="upgrades">Production</div>
+          <button class="buttonsUpgrade" id="grandma"></button>
+          <button class="buttonsUpgrade" id="mine"></button>
+          <button class="buttonsUpgrade" id="school"></button>
+          <button class="buttonsUpgrade" id="flowergarden"></button>
+          <button class="buttonsUpgrade" id="solarpanels"></button>
+          <button class="buttonsUpgrade" id="artgallery"></button>
 
-}
-document.addEventListener("click",handClick)
-</script>
+        </div>
+        <div id="improvementContainer">
+          <div id="improvements">Improvements</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
