@@ -1,6 +1,6 @@
 :root {
-  --c-maincolor: aquamarine;
-  --c-secondcolor: #f32fa3;
+  --c-maincolor: white; /*aquamarin*/
+  --c-secondcolor: #000000; /*f32fa3*/
   --c-fonasdt: rgb(92, 96, 222);
   --c-font: rgb(42, 44, 82);
   --c-bg: #ffffff;
@@ -19,14 +19,15 @@
 
 * {
   margin: 0px;
+  box-shadow:none;
 }
 
-nav {
+/* nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
+} */
 
 nav {
   display: flex;
@@ -36,6 +37,13 @@ nav {
 
   background-color: var(--c-secondcolor);
   height: 80px;
+  border-color: var(--c-secondcolor);
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-style: solid;
+  
 }
 
 nav a {
@@ -51,12 +59,16 @@ nav a button {
   
     font-size: 1.4em;
     font-family: var(--f-secondfont);
-    color: var(--c-font);
-  
-    background-color: var(--c-maincolor);
+    color: var(--c-maincolor);
+    box-shadow:none;
+    
+    background-color: var(--c-secondcolor);
     border-color: var(--c-maincolor);
     border-radius: 8px;
-    border-width: 0px;
+    border-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    
 }
 
 .container {
