@@ -11,9 +11,9 @@ function init() {
     styleDiv();
 }
 function baseHandler(){
-    debugger;
+    //debugger;
     //if (document.getElementById("container").getBoundingClientRect().top>=0);
-    if (arrRollBack[checkUpLine].getBoundingClientRect().bottom<window.screen.height-boundary){rmUpBackRow();genDwnBackRow();addEmpty();}
+    if (arrRollBack[checkUpLine].getBoundingClientRect().bottom<window.screen.height-800){rmUpBackRow();genDwnBackRow();addEmpty();}
     else if (arrRollBack[checkLowLine()].getBoundingClientRect().top>boundary){rmDwnBackRow();genUpBackRow();rmEmpty();}
     else genDwnBackRow();
     // console.log(window.screen.height-boundary);
@@ -56,11 +56,6 @@ function genUpBackRow(){
     CurRollBack = arrRollBack[arrRollBack.length-1];
     // link zu genimgback fehlt
     arrRollBack[0].style.backgroundImage = 'url("../Assets/deepslate.png")'
-}
-function genIMGBackRow(){
-        // IMG background
-        // work in progress
-        CurRollBack.style.backgroundImage = 'url("../Assets/cobblestone.png")';
 }
 function rmDwnBackRow(){
     CurRollBack.remove();
@@ -112,7 +107,17 @@ document.addEventListener("scroll",baseHandler)
 // document.addEventListenerU("scroll",usualHandler);
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
-
+let deepGround = 1;
+function genIMGBackRow(){
+    if (document.height>=100)deepGround = 1;
+    else if (document.height>=500)deepGround = 2;
+    else if (document.height>=1000){deepGround =3;}
+    // IMG background
+    // work in progress
+    if(deepGround ==1)CurRollBack.style.backgroundImage = 'url("../Assets/dirt.png")';
+    else if(deepGround ==2)CurRollBack.style.backgroundImage = 'url("../Assets/cobblestone.png")';
+    else if(deepGround == 3)CurRollBack.style.backgroundImage = 'url("../Assets/deepslate.png")';
+}
 /*
 Generator
 
