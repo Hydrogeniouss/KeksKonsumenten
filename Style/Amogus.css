@@ -1,0 +1,23 @@
+body{
+    font-family: "Comic sans MS";
+    font-size: 72px;
+    color: greenyellow;
+    background-color:deeppink;
+}
+#amogiContainer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.amogus{
+    background-repeat: no-repeat;
+    background-image:url(../Assets/amogi.png);
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-color: deeppink;
+}
+button{
+    border-style: none;
+}
