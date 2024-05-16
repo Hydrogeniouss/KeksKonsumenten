@@ -1,6 +1,20 @@
-const main = () => {
-  const container = document.getElementById("amogiContainer");
+const texts = [
+  "Find the Imposter",
+  "Find the sussy baka",
+  "Find the sussus amogus",
+  "sus sus",
+  "amogus",
+  "Who is Amposta"
+];
 
+const main = () => {
+  const audio = new Audio("../Assets/amogus.mp3");
+  document.addEventListener("mouseover", () => audio.play());
+
+  document.getElementById("text").innerHTML =
+    texts[Math.floor(Math.random() * texts.length)];
+
+  const container = document.getElementById("amogiContainer");
   for (let i = 0; i < 10; ++i) {
     const button = document.createElement("button");
     button.classList.add("amogus");
@@ -10,7 +24,7 @@ const main = () => {
     Math.floor(Math.random() * 10)
   ];
   imposter.addEventListener("click", () => {
-    console.log("you win!");
+    document.getElementById("victory").innerHTML = "You win!";
   });
 };
 
